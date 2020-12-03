@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="UNAME" value="DemoSalesManager"/>
+  <parameter name="PWD" value="crmsfa"/>
+  <parameter name="URL" value="http://leaftaps.com/opentaps/"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="TestNGPractice.CreateLead">
+        <methods>
+          <include name="logIn"/>
+          <include name="setData"/>
+          <include name="createLead"/>
+        </methods>
+      </class> <!-- TestNGPractice.CreateLead -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

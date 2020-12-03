@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="URL" value="https://dev87223.service-now.com/"></parameter>
+<parameter name="UserName" value ="admin"></parameter>
+<parameter name="Password" value ="jO5meNwhF6XL"></parameter>
+  <test thread-count="5" name="Test" verbose ="5">
+    <classes>
+      <class name="RealTimeScenarios.CreateNewIncident"/>
+      <class name="RealTimeScenarios.UpdateExistingIncident"/>
+      <class name="RealTimeScenarios.DeleteIncident"/>
+      <class name="RealTimeScenarios.ResolveIncident"/>
+      <class name="RealTimeScenarios.Assigntheincident"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
